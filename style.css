@@ -1,0 +1,43 @@
+/* styles.css */
+
+/* Estilo para el contenedor del logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el logo de la universidad */
+.university-logo {
+    max-width: 200px; /* Ajustar el tamaño según sea necesario */
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.btn{
+    background-color: #007bff;
+    
+}
+
+.btn:hover {
+    background-color: red;
+
+}
+
+/* Estilo para el mensaje de error */
+.text-danger {
+    font-size: 16px;
+}
+
+/* Estilo para el mensaje explicativo */
+.text-muted {
+    font-size: 14px;
+}
+
+/* Estilo para los resultados */
+h2 {
+    font-size: 24px;
+    color: #333;
+}

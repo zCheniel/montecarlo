@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Método de Monte Carlo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Agregar el logo de la universidad -->
+    <div class="logo-container">
+        <img src="https://www.urbeinternacional.com/img/Pie%20de%20Pagina/aliados-03.png" alt="Logo de la Universidad" class="university-logo">
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Método de Monte Carlo</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <label for="simulations" class="input-group-text">Número de Simulaciones:</label>
+                    <input type="number" id="simulations" min="1" required class="form-control">
+                </div>
+                <span id="error-message" class="text-danger"></span>
+                <small class="text-muted">Mientras más simulaciones se realicen, más exacto será el resultado.</small>
+                <button onclick="calculateMonteCarlo()" class="btn-primary mt-3">Calcular</button>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <h2 class="text-center">Resultados</h2>
+                <div id="output"></div>
+                <div class="alert alert-success" id="success-alert" style="display: none;">
+                    El cálculo se ha realizado correctamente.
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
